@@ -10,14 +10,10 @@
 
     <style>
         body {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;            margin: 0;
             padding: 0;
             background-color: #ded6c9;
             color: #333;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
 
         header {
@@ -75,7 +71,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding-left: 200px;
-            flex-grow: 2;
         }
 
         .product-item {
@@ -95,7 +90,7 @@
             padding: 10px 0;
             padding-left: 100px;
             position: relative;
-            top: 500px;
+            bottom: 0;
             width: 100%;
         }
 
@@ -181,8 +176,49 @@
     </header>
 
     <div class="container" id="contentContainer">
-        Что-нибудь
-        Кое-как
+        
+        <div class="product-item">
+            <div style="flex-grow: 1;"> 
+                <img src="./index_files/tachka.jpeg" alt="Инструмент 2">
+                <h3>Электротачка</h3>
+                <p>Мощность: 800 Вт</p>
+                <p>Сменные шины: Нет</p>
+                <p>Время работы: 6 часов</p>
+            </div>
+            <div>
+                <p><strong>Цена:</strong> $399.99</p>
+                <button class="addToCart">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div style="flex-grow: 1;"> 
+                <img src="./index_files/porguzchik.jpg" alt="Инструмент 2">
+                <h3>Погрузчик</h3>
+                <p>Мощность: 900 Вт</p>
+                <p>Грузоподъемность: 800 кг</p>
+                <p>Макс. скорость: 50 км/ч</p>
+            </div>
+            <div>
+                <p><strong>Цена:</strong> $1599.99</p>
+                <button class="addToCart">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div style="flex-grow: 1;"> 
+                <img src="./index_files/Cat-785C.jpg" alt="Инструмент 2">
+                <h3>Самосвал</h3>
+                <p>Мощность: 1193 кВт</p>
+                <p>Грузоподъемность: 139 тон</p>
+                <p>Номинальная эксплуотационная масса: 249476 кг</p>
+            </div>
+            <div>
+                <p><strong>Цена:</strong> $659 999.99</p>
+                <button class="addToCart">Добавить в корзину</button>
+            </div>
+        </div>
+
     </div>
 
     <footer>

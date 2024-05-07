@@ -10,14 +10,10 @@
 
     <style>
         body {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;            margin: 0;
             padding: 0;
             background-color: #ded6c9;
             color: #333;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
 
         header {
@@ -75,7 +71,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding-left: 200px;
-            flex-grow: 2;
         }
 
         .product-item {
@@ -95,7 +90,7 @@
             padding: 10px 0;
             padding-left: 100px;
             position: relative;
-            top: 500px;
+            bottom: 0;
             width: 100%;
         }
 
@@ -181,8 +176,50 @@
     </header>
 
     <div class="container" id="contentContainer">
-        Что-нибудь
-        Кое-как
+        
+        <div class="product-item">
+            <div style="flex-grow: 1;"> 
+                <img src="./index_files/blower.jpg" alt="Инструмент 1">
+                <h3>Воздуходувка</h3>
+                <p>Мощность: 200 Вт</p>
+                <p>Время работы: 45 мин.</p>
+                <p>Скорость потока: 20 м/с</p>
+            </div>
+            <div>
+                <p><strong>Цена:</strong> $159.99</p>
+                <button class="addToCart">Добавить в корзину</button>
+            </div>
+        </div>
+
+        
+        <div class="product-item">
+            <div style="flex-grow: 1;"> 
+                <img src="./index_files/electro_cosa.jpg" alt="Инструмент 2">
+                <h3>Электрокоса</h3>
+                <p>Мощность: 700 Вт</p>
+                <p>Сменные насадки: 3 шт.</p>
+                <p>Длина провода: 12 м.</p>
+            </div>
+            <div>
+                <p><strong>Цена:</strong> $199.99</p>
+                <button class="addToCart">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div style="flex-grow: 1;"> 
+                <img src="./index_files/electro_cultivator.jpg" alt="Инструмент 2">
+                <h3>Мотокультиватор</h3>
+                <p>Мощность: 500 Вт</p>
+                <p>Сменные лезвия: 2 шт.</p>
+                <p>Объем: 6 литров</p>
+            </div>
+            <div>
+                <p><strong>Цена:</strong> $299.99</p>
+                <button class="addToCart">Добавить в корзину</button>
+            </div>
+        </div>
+
     </div>
 
     <footer>

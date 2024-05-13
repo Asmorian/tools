@@ -90,6 +90,10 @@ width: 92,5%;
     padding-left: 0px;
 }
 
+iframe {
+    width: 90%;
+}
+
 .logo {
 min-width: 80px;
 max-width: 15%;

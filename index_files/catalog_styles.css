@@ -1,0 +1,163 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ded6c9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: #ff9100;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    max-height: 120px;
+    padding-left: 200px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    height: 100%; 
+    width: 200px; 
+    background-color: #333;
+    color: #fff;
+    padding-top: 50px; 
+    text-align: left;
+    overflow-y: auto; 
+    z-index: 100; 
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.logo {
+    min-width: 100px;
+    max-width: 15%;
+    height: auto;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 200px;
+}
+
+.product-item {
+    display: flex; 
+    flex-direction: column;
+    width: calc(30% - 20px); 
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #494949;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    padding-left: 100px;
+    position: relative;
+    bottom: 0;
+    width: 92.5%;
+}
+
+button.addToCart {
+    background-color: #162e48;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+button.addToCart:hover {
+    background-color: darkorange;
+    color: black;
+}   
+
+div a {
+    background-color: #162e48;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+div a:hover {
+    background-color: darkorange;
+    color: black;
+}
+
+    
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Ширина контейнера на всю ширину экрана */
+        padding-left: 0px;
+    }
+
+    .product-item {
+        width: 100%; /* Ширина карточки товара на маленьких экранах (полная ширина) */
+        margin: 10px 0; /* Уменьшенные отступы */
+    }
+
+    .logo {
+    min-width: 80px;
+    max-width: 15%;
+    height: auto;
+    }
+
+    nav {
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px; 
+    width: 100%; 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    }
+
+    header {
+    padding-left: 0px;
+    padding-top: 40px;
+    }
+
+    footer {
+        padding-left: 0px;
+    }
+
+}

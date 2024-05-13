@@ -7,161 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href=".\index_files\37707-transformed_shmoll.png">
     <title>Продажа строительных инструментов</title>
-
-    <style>
-        body {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            padding: 0;
-            background-color: #ded6c9;
-            color: #333;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            position: relative;
-            justify-content: center;
-            background-color: #ff9100;
-            color: #000000;
-            padding: 10px 0;
-            text-align: center;
-            max-height: 120px;
-            padding-left: 200px;
-        }
-
-        nav {
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            left: 0;
-            top: 0;
-            height: 100%; 
-            width: 200px; 
-            background-color: #333;
-            color: #fff;
-            padding-top: 50px; 
-            text-align: left;
-            overflow-y: auto; 
-            z-index: 100; 
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        .logo {
-            min-width: 100px;
-            max-width: 15%;
-            height: auto;
-        }
-
-        .product-item img {
-            width: 100%;
-            height: auto;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding-left: 200px;
-            flex-grow: 2;
-        }
-
-        .product-item {
-            display: flex; 
-            flex-direction: column;
-            width: calc(30% - 20px); 
-            margin: 10px;
-            background-color: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        footer {
-            background-color: #494949;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            padding-left: 100px;
-            position: relative;
-            top: 500px;
-            width: 100%;
-        }
-
-        button.addToCart {
-            background-color: #162e48;
-            color: rgb(255, 255, 255);
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-
-        }
-
-        button.addToCart:hover {
-            background-color: darkorange;
-            color: black;
-        }       
-
-        @media (max-width: 768px) {
-            .container {
-                width: 100%; /* Ширина контейнера на всю ширину экрана */
-                padding-left: 0px;
-            }
- 
-            .product-item {
-                width: 100%; /* Ширина карточки товара на маленьких экранах (полная ширина) */
-                margin: 10px 0; /* Уменьшенные отступы */
-            }
-
-            .logo {
-            min-width: 80px;
-            max-width: 15%;
-            height: auto;
-            }
-
-            nav {
-            position: fixed;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            height: 20px; 
-            width: 100%; 
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            }
-
-            header {
-            padding-left: 0px;
-            padding-top: 40px;
-            }
-
-            footer {
-                padding-left: 0px;
-            }
-
-        }
-
-
-        
-    </style>
+    <link rel="stylesheet" href="lab_styles.css">
     <style type="text/css" id="operaUserStyle"></style>
 
 </head>
@@ -177,16 +23,41 @@
 <div>
     <header>
         <img src="./index_files/37707-transformed.png" alt="Логотип" class = "logo">
-        <h1>Продажа строительных инструментов</h1>
+        <h1>МастерГрад</h1>
     </header>
 
     <div class="container" id="contentContainer">
-        Что-нибудь
-        Кое-как
+        Добро пожаловать в мир инноваций и надежности! Магазин строительной техники 'МастерГрад' 
+        приглашает вас обнаружить лучший выбор профессиональной техники для строительства и ремонта. 
+        У нас вы найдете все необходимое для успешного завершения любого проекта – от мощных бензопил 
+        до современных бетоносмесителей. Надежность, качество и лучшие цены – вот наше обещание. 
+        Откройте для себя новые возможности с 'МастерГрад' уже сегодня!
+        <br>
+        <br>
+        "МастерГрад" — это фирма с богатой историей в области поставки строительной техники. 
+        Наша компания была основана в 1990 году группой предприимчивых инженеров, разделявших 
+        страсть к инновациям и строительству. С тех пор мы постоянно расширяем ассортимент предлагаемой 
+        техники и улучшаем качество обслуживания.
+        <br>
+        <br>
+        За годы работы "МастерГрад" стал надежным партнером для строительных компаний и частных лиц. 
+        Наш опыт и профессионализм позволяют нам предлагать только лучшие решения на рынке строительной техники. 
+        Мы работаем над тем, чтобы наши клиенты могли осуществлять свои проекты более эффективно, 
+        безопасно и с меньшими затратами.
+        <br>
+        <br>
+        На сегодняшний день "МастерГрад" гордится своими достижениями и постоянно
+
+        <section class="map">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9689.836104982585!2d39.56918209028226!3d52.61554855422376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413a148ff00aca55%3A0x5dfea4f629f36e2b!2z0KLQnNCaINCY0L3RgdGC0YDRg9C80LXQvdGC!5e0!3m2!1sru!2sru!4v1715620700074!5m2!1sru!2sru" width="1000" height="450" style="border: 2px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </div>
 
     <footer>
-        <p>© 2024 Продажа строительных инструментов</p>
+        <p>© 2024 Продажа строительных инструментов<br>
+            Email: info@yourcompany.com</p>
     </footer>
 </div>
 </body></html>
